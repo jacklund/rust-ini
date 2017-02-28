@@ -197,7 +197,7 @@ impl<'a> SectionSetter<'a> {
 pub type Properties = HashMap<String, String>; // Key-value pairs
 
 /// Ini struct
-#[derive(Clone)]
+#[derive(Clone, Debug)]
 pub struct Ini {
     sections: HashMap<Option<String>, Properties>,
 }
